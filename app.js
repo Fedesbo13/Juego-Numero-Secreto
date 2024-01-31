@@ -29,7 +29,7 @@ function verificarIntento() {
         intentos++;
         limpiarCaja();
         if (intentos > maximoIntentos) {
-            asignarTextoElemento('p', 'Los siento, llegaste a la cantidad máxima de intentos!!');
+            asignarTextoElemento('p', `Los siento, llegaste a la cantidad máxima de ${maximoIntentos} intentos!!`);
             document.getElementById('intentar').setAttribute('disabled', 'true');
             document.getElementById('reiniciar').removeAttribute('disabled');
             document.getElementById('valorUsuario').setAttribute('disabled', 'true');
